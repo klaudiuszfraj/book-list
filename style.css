@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 900px;
+    margin: auto;
+}
+h1{
+    display: block;
+    font-size: 2.3em;
+    margin-top: 2em;
+
+}
+.conteiner__massage{
+    color: #fff;
+    visibility: hidden;
+    width: 50%;
+    padding: .5em;
+    text-align: center;
+    content: "jhjhj";
+}
+.conteiner__massage.bookAdded{
+ 
+    background-color: green;
+    content: "Your book was added.";
+    visibility: visible;
+}
+.conteiner__massage.bookRejected{
+ 
+    background-color: red;
+    content: "Your book was rejected.";
+    visibility: visible;
+}
+form{
+    width: 100%;
+}
+.conteiner__box label{
+    display: block;
+    padding-left: 1em;
+}
+.conteiner__box{
+
+    margin: 1em;
+    width: 100%;
+}
+.conteiner__box input{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 4px;
+
+;}
+.conteiner-submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.conteiner-submit button{
+    padding: .4em 2em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(2, 121, 2);
+}
+.conteiner-submit button:hover{
+    background-color: green;
+    color: #fff;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th{
+    border-radius: 2px;
+    border-bottom: 3px solid grey;
+}
+.table td{
+    padding: .5em;
+    border-bottom:2px solid gray;
+    text-align: center;
+
+}

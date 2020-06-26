@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book list</title>
+    <title>Book list app </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="conteiner">
-        <h1>Add your book</h1>
+        <h1>My book list</h1>
+        <div id="massage" class="conteiner__massage book-rejected">
+            kkk
+        </div>
         <form action="" >
             <div class="conteiner__box">
                 <label for="title">Title</label>
@@ -26,8 +29,8 @@
                 <label for="ISBN">ISBN</label>
                 <input type="text" name="ISBN" id="ISBN">
             </div>
-            <div class="conteiner--submit">
-                <button type="submit">Add book</button>
+            <div class="conteiner-submit">
+                <button type="submit">Add book</button> 
             </div>
         </form>
         <table class="table">
@@ -37,8 +40,33 @@
                     <th>Author</th>
                     <th>Relece year</th>
                     <th>ISBN</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
+            <tbody class="table__list" id="table-list">
+                <tr>
+                    <td>Lorem.</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Lorem.</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Lorem.</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>aLorem</td>
+                    <td>x</td>
+                </tr>
+
+            </tbody>
         </table>
     </div>
 </body>
