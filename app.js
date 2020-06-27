@@ -92,3 +92,4 @@ document.querySelector("#form-book").addEventListener("submit", (e) => {
         UI.deleteBookFromList(e.target)
         UI.showAlert("Book removed", "success");
 });
+///
