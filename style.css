@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-.conteiner{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,50 +18,31 @@ h1{
     margin-top: 2em;
 
 }
-.conteiner__massage{
-    color: #fff;
-    visibility: hidden;
-    width: 50%;
-    padding: .5em;
-    text-align: center;
-    content: "jhjhj";
-}
-.conteiner__massage.bookAdded{
- 
-    background-color: green;
-    content: "Your book was added.";
-    visibility: visible;
-}
-.conteiner__massage.bookRejected{
- 
-    background-color: red;
-    content: "Your book was rejected.";
-    visibility: visible;
-}
+
 form{
     width: 100%;
 }
-.conteiner__box label{
+.container__box label{
     display: block;
     padding-left: 1em;
 }
-.conteiner__box{
+.container__box{
 
     margin: 1em;
     width: 100%;
 }
-.conteiner__box input{
+.container__box input{
     width: 100%;
     padding: 0.5em;
     border-radius: 4px;
 
 ;}
-.conteiner-submit {
+.container-submit {
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
 }
-.conteiner-submit button{
+.container-submit button{
     padding: .4em 2em;
     font-size: 1.3em;
     outline: none;
@@ -69,7 +50,7 @@ form{
     border-radius: 4px;
     background-color: rgb(2, 121, 2);
 }
-.conteiner-submit button:hover{
+.container-submit button:hover{
     background-color: green;
     color: #fff;
 }
