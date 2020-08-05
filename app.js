@@ -50,7 +50,10 @@ class UI{
         const div = document.querySelector('.message');
         div.className = `message ${className}`;
         div.innerText = message;
-        // setTimeout(() => document.querySelector(".error").remove(),3000);
+        setTimeout(() => {
+            div.innerText = 'Submit form to add books';
+            div.classList = 'message';}
+            ,5000);
          
     }
 
