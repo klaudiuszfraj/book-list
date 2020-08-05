@@ -75,5 +75,14 @@ form{
     padding: .5em;
     border-bottom:2px solid gray;
     text-align: center;
-
+}
+.delete{
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 23px;
+    text-decoration: none;
+    padding: 3px;
+    background-color: red;
+    border-radius: 3px;
 }

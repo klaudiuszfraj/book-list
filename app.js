@@ -14,16 +14,16 @@ class UI{
     static displayBooks() {
         const storedBooks = [
             {
-                title: "book one",
-                author: "Gall Anonymus",
-                release: "2010r",
-                isbn: "445445"
+                title: "Eloquent JavaScript",
+                author: "Marijn Haverbeke",
+                release: "2014",
+                isbn: "1593275846"
             },
             {
-                title: "book two",
-                author: "Anonymus Gall",
-                release: "2000r",
-                isbn: "34234"
+                title: "You Don't Know JS: ES6 & Beyond",
+                author: "Kyle Simpson",
+                release: "2016",
+                isbn: "9781491904244"
             }
         ];
         const books = storedBooks;
@@ -80,7 +80,17 @@ document.querySelector("#form-book").addEventListener("submit", (e) => {
     //validation
     if (title === "" || author === "" || release === "" || isbn === "") {
         UI.showAlert("Pleace fill in all fields", "error");
-    } else {
+    }else if (author.match(/\d/g)){
+        UI.showAlert("Author cannot contain numbers", "error");
+    }else if (!release.match(/\d/g)){
+        UI.showAlert("enter relase year format RRRR", "error");
+    }else if (!isbn.match(/\d/g)){
+        UI.showAlert("ISBN contain only numbers", "error");
+    }
+
+
+
+    else {
         const book = new Book(title, author, release, isbn);
         console.log(book)
         
