@@ -47,14 +47,10 @@ class UI{
         }
     }
     static showAlert(message, className){
-        const div = document.createElement("div");
+        const div = document.querySelector('.message');
         div.className = `message ${className}`;
-        div.appendChild(document.createTextNode(message));
-        const container = document.querySelector(".container");
-        const form = document.querySelector("#form-book");
-        container.insertBefore(div, form);
-
-        setTimeout(() => document.querySelector(".error").remove(),3000);
+        div.innerText = message;
+        // setTimeout(() => document.querySelector(".error").remove(),3000);
          
     }
 
@@ -64,8 +60,11 @@ class UI{
         document.querySelector("#releaseYear").value = "";
         document.querySelector("#ISBN").value = "";
     }
-}; 
-
+};
+//storage
+class Store{
+    
+}
 document.addEventListener("DOMContentLoaded",UI.displayBooks);
 
 document.querySelector("#form-book").addEventListener("submit", (e) => {
