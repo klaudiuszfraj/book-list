@@ -14,16 +14,16 @@ class UI{
     static displayBooks() {
         const storedBooks = [
             {
-                title: "book one",
-                author: "Gall Anonymus",
-                release: "2010r",
-                isbn: "445445"
+                title: "Eloquent JavaScript",
+                author: "Marijn Haverbeke",
+                release: "2014r",
+                isbn: "1593275846"
             },
             {
-                title: "book two",
-                author: "Anonymus Gall",
-                release: "2000r",
-                isbn: "34234"
+                title: "You Don't Know JS: ES6 & Beyond",
+                author: "Kyle Simpson",
+                release: "2016r",
+                isbn: "9781491904244"
             }
         ];
         const books = storedBooks;
